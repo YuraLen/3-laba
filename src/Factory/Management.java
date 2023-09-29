@@ -4,11 +4,6 @@ import Storage.Storage;
 import Storage.IceCream;
 
 public class Management {
-    /** У цьому класі присутні методи для керуванням підприємством.
-     *  Тут можна дізнатись про бюджет та відомості по складу.
-     *  Можливість виготовити та продати партію певної продукції.
-     *  */
-
     private Accounting accounting; // Об'єкт обліку бюджету
     private Storage storage; // Об'єкт складу для зберігання морозива
 

@@ -1,5 +1,4 @@
 import Factory.Accounting;
-import Factory.FactoryInfo;
 import Factory.Management;
 import Storage.IceCream;
 import Storage.Storage;
@@ -9,15 +8,10 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class AppBuild {
-    /** Тут відбувається побудова всієї програми по виробництву морозива
-     *  Виводиться інформація про холодокомбінат та можливість керувати підприємством.
-     * */
-
     public void start() {
         Accounting accounting = new Accounting();
         Management management = new Management(accounting);
         Scanner scanner = new Scanner(System.in);
-        FactoryInfo factoryInfo = new FactoryInfo();
         Storage storage = new Storage();
 
         Map<String, Double> iceCreamPrices = new HashMap<>();
@@ -28,8 +22,7 @@ public class AppBuild {
         iceCreamPrices.put("М'ятне", 3.8);
         storage.setIceCreamPrices(iceCreamPrices);
 
-        System.out.println("           * Вітаємо Вас на підприємстві! *\n");
-        factoryInfo.about();
+        System.out.println("* Вітаємо Вас на підприємстві! *\n");
 
         boolean isProgramActive = true;
         while (isProgramActive) {

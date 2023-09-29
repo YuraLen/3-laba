@@ -4,10 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Storage {
-    /** Цей клас імітує склад підприємства, де зберігається продукція
-     *  Тут продукція вноситься в список, виноситься та відображається весь товар в наясності.
-     *  */
-
     private final Map<String, Integer> stock; // Мапа для зберігання морозива на складі
     private Map<String, Double> iceCreamPrices; // Мапа для зберігання цін на морозиво
 

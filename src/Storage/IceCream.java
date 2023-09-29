@@ -1,10 +1,6 @@
 package Storage;
 
 public class IceCream {
-    /** Цей клас створений для того, щоб можна було працювати з продукцією.
-     *  Можна задати назву та ціну
-     * */
-
     private String name; // Назва морозива
     private double price; // Ціна за одну одиницю морозива
 

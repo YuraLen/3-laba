@@ -1,9 +1,6 @@
 package Factory;
 
 public class Accounting {
-    /** Цей клас імітує бухгалтерію.
-     *  Тут можна дізнатись дані про затрати, надходження та бюджет підприємства */
-
     private double amountOfMoneyInCash = 100000;
     private double amountOfExpenses;
     private double amountOfIncome;
